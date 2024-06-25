@@ -1,0 +1,62 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "wp-send/button",
+    "version": "0.1.0",
+    "title": "Button",
+    "category": "widgets",
+    "icon": "smiley",
+    "description": "Example block scaffolded with Create Block tool.",
+    "example": {},
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "content": {
+            "type": "string",
+            "default": ""
+        },
+        "width": {
+            "type": "string",
+            "default": "auto"
+        },
+        "fontSize": {
+            "type": "number",
+            "default": 16
+        },
+        "padding": {
+            "type": "object",
+            "default": {
+                "top": 5,
+                "right": 10,
+                "bottom": 5,
+                "left": 10
+            }
+        },
+        "color": {
+            "type": "string",
+            "default": "#fff"
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "#000"
+        },
+        "border": {
+            "type": "object",
+            "default": {
+                "color": "#000",
+                "style": "solid",
+                "width": "0px"
+            }
+        },
+        "borderRadius": {
+            "type": "number",
+            "default": 3
+        }
+    },
+    "textdomain": "wp-send",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./view.js"
+}

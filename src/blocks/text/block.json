@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "wp-send/text",
+    "version": "0.1.0",
+    "title": "Text",
+    "category": "widgets",
+    "icon": "smiley",
+    "description": "Example block scaffolded with Create Block tool.",
+    "example": {},
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "content": {
+            "type": "string",
+            "default": ""
+        },
+        "fontSize": {
+            "type": "number",
+            "default": 16
+        },
+        "color": {
+            "type": "string",
+            "default": "#000"
+        }
+    },
+    "textdomain": "wp-send",
+    "ancestor": ["wp-send/section"],
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./view.js"
+}
